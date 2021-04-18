@@ -1,0 +1,270 @@
+
+:root{
+    --black--:#000;
+    --white--:#fff;
+    --text-color--:#333;
+    --header-height--:200px;
+    --nav-height--:50px;
+    --Search--:calc(var(--header-height--) -  var(--nav-height--));
+    --start-gold-color--:rgb(255 206 61);
+    --primary-color--:tomato;
+
+    --header__catelogy-height:60px;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:62.5%;
+    font-weight: 700;
+    font-family: 'roboto',sans-serif;
+    line-height: 16px;
+    box-sizing: border-box;
+    color: var(--text-color--);
+    
+}
+
+/* .grid{
+    width: 1600px;
+    max-width: 100%; 
+    margin:0px auto;
+    
+}
+.grid__rows
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;;
+    padding-bottom: 5px;
+   
+} */
+.app-content
+{
+   padding-top: 40px;
+   display: block;
+}
+/* test */
+
+/* .grid__colums-2
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+    
+}
+
+
+.grid__colums-10
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+} */
+
+/* .grid__colums-2-5
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;r
+
+} */
+/* animation */
+@keyframes fadeIN{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* ----------------------modal---------------------------- */
+.modal
+{
+    position: fixed;;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    
+}
+.modal__overlay
+{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.modal__content
+{
+    /* width: 750px;
+    height: 800px; */
+    background-color: var(--white--);
+    margin: auto;
+    z-index: 1;
+    border-radius:6px;
+    overflow: hidden;
+   
+    --from--:0.7;
+    --to--:1;
+    animation: Growth linear 0.2s;
+    
+}
+@keyframes Growth
+{
+    from{
+        transform:scale(var(--from--)); 
+        opacity: 0;
+    }
+    to
+    {
+        transform:scale(var(--to--)) ; 
+        opacity: 1;
+    }
+}
+
+/* btn filter */
+.btn{
+    min-width: 130px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: var(--text-color--);
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    
+    
+}
+.btn_hover:hover
+{
+    transform: translateY(3px);
+    
+}
+
+
+/* selection */
+.select__input
+{
+    min-width: 170px;
+    height: 50px;
+    background-color: white;
+    color: var(--text-color--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   
+
+}
+.select__input:hover .select__input-list
+{
+    display: block;
+}
+.select__input__label
+{
+    font-size: 1.6rem;
+    
+}
+
+.select__input-list
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:calc(100% + 4px);
+    background-color: white;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    
+ 
+}
+.select__input-list::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top:-5px;
+    left: 0;
+    
+    
+   
+}
+.select__input-items
+{
+    width: 100%;
+    padding: 10px 0;
+
+}
+.select__input-items:hover .select__input-items-link
+{
+    color: tomato;
+}
+.select__input-items-link
+{
+    text-decoration: none;
+    color: var(--text-color--);
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight:450;
+   
+}
+
+
+/* Pagination */
+.Pagination
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+   
+    
+}
+.Pagination-item
+{
+    margin: 0 13px;
+}
+.Pagination-item__link.Pagination-item--active
+{
+    background-color: tomato;
+    color: white;
+  
+}
+
+.Pagination-item__link.Pagination-item--3dot
+{
+    cursor: default;
+}
+
+.Pagination-item__link
+{
+    --height--:30px;
+    text-decoration: none;
+    color:#939393;
+    min-width: 40px;
+    max-height:var(--height--);
+    display: block;
+    line-height:var(--height--);
+    font-size: 1.8rem;
+    font-weight: 00;
+}
+

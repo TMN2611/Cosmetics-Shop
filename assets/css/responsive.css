@@ -1,0 +1,235 @@
+
+
+/* Mobile */
+@media (max-width:739px) {
+
+    :root {
+        --Search--:70px
+    }
+    .hidden-on-Mobile {
+        display: none;
+    }
+    .container {
+        margin-top: calc(var(--Search--) + var(--header__catelogy-height) + 30px);
+    }
+    .app-content {
+        padding: 0;
+    }
+    .header__With-Search {
+        padding: 0 29px;
+        justify-content: space-between;
+    }
+    .header__With-Search__Cart
+    {
+        margin:0;
+    }
+    .header__With-Search__logo
+    {
+        margin: 0;
+    }
+    .header__Search-mobile {
+        display: block;
+    }
+    .Pagination-item {
+        margin: 0;
+    }
+    .Pagination-item__link {
+        min-width: 30px;
+    }
+    .header__With-Search__Search-area {
+        position: fixed;
+        top: var(--Search--); 
+        left: 0;
+        width: 100%;
+        height:calc(var(--header__catelogy-height) + 2px) ; 
+        padding: 0 20px;
+        z-index: 10;
+        display: none;
+        animation: SearchMobleFadeIn linear 0.3s;
+    }
+    .header__With-Search__Search-history {
+        padding: 0 20px;
+        position: fixed;
+        left: 0;
+        top:calc( var(--header-height--) + var(--header__catelogy-height) );
+        width: 100%;
+    }
+    .header__With-Search__logolazada {
+        height: 40px;
+    }
+    .header__With-Search__Cart-icon {
+        font-size: 3rem;
+    }
+    .Has-notify__Cart-icon-number {
+        width: 25px;
+        font-size: 1.4rem;
+        border-radius: 13px;
+        /* border-width: 1px; */
+        top:-2px;
+        right: -10px;
+    }
+    @keyframes SearchMobleFadeIn {
+        from {
+            top: calc( var(--Search--) / 2);
+            opacity: 0; 
+        }
+        to {
+            top: var(--Search--); 
+            opacity: 1; 
+        }
+    }
+    .header__With-Search__Search-input {
+        font-size: 1.4rem;
+    }
+    .Search__Option  {
+        top: calc(100% + 25px) ;
+        width: 135px;
+    }
+    .Search__history-items {
+        font-size: 1.4rem;
+    }
+    .header__With-Search__Search-option {
+        padding-left: 5px;
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+    .header__With-Search__Search-icon {
+        height: 30px;
+    }
+    .header__With-Search__Search-iconDown {
+        margin-right: 20px;
+    }
+    .header__category-link {
+        font-size: 1.4rem;
+    }
+    .Has-items__notify-text-primary {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+    .Has-items__notify-text-second {
+        font-size: 1.3rem;
+
+    }
+    .Has-items__notify-images {
+        margin-left: 0;
+    }
+    .Has-items__notify-price-number {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    .Has-items__notify__button-delete {
+        margin-left: 20px;
+    }
+
+    .mobile-category {
+        display: flex;
+        
+    }
+    .product__list-wrapp {
+        padding: 0 4px;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    :root {
+        --Search--:90px
+    }
+    .hidden-on-Tablet {
+        display: none;
+    }
+    .header__With-Search__Cart
+    {
+        margin:0 0 0 10px;
+    }
+    
+}
+
+/* Mobile and Tablet */
+@media (max-width:1023px) {
+    .hidden-on-Mobile_Tablet {
+        display: none;
+    }
+    .show-on-Mobile_Tablet {
+        display: block;
+    }
+  
+    .header__With-Search__Search-area
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .header__With-Search__Search-input {
+        padding-right: 0;
+    }
+    
+    :root {
+        --header-height--:90px;
+        --nav-height--:0px;
+       
+    }
+    .footer-text
+    {
+        text-align: center;
+    }
+    .container
+    {
+        margin-top: calc(var(--header-height--) + var(--header__catelogy-height)) ;
+    }
+    .header
+    {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    .header__Cart-has-items
+    {
+        position: fixed;
+        padding: 0 20px;
+        top: var(--header-height--);
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .Has-notify__header
+    {
+        text-align: center;
+    }
+    .header__Cart-has-items::after,
+    .header__Cart-no-items::after
+    {
+        display: none;
+    }
+    .header__catelogy {
+        display: block;
+    }
+    .Minhnhan {
+        display: block;
+    }
+ 
+   
+    
+}
+
+/* PC */
+@media (min-width:1024px) {
+    .hidden-on-Pc {
+        display: none;
+    }
+   
+}
+
+@media (min-width: 1024px) and (max-width: 1239px)
+{
+    .filter__label
+    {
+        display: none   ;
+    }
+    .page__number
+    {
+        margin-right: 10px;
+    }
+}
