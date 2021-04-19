@@ -9,7 +9,7 @@
 /*------------------------------------ ----------------heder------------------------------------------------- */
 header{
     height:var( --header-height--);
-    background-color: black;
+    background-color: tomato;
     font-size: 1.6rem;
     width: 100%;
     
@@ -447,7 +447,6 @@ header{
     background-color: rgb(255, 255, 255);
     height: var( --header__catelogy-height);
     display: none;
-    border-top: 1px solid rgb(20, 15, 15);
     border-bottom : 1px solid rgba(51, 51, 51, 0.2);
 }
 .header__catelogy-list
@@ -473,7 +472,7 @@ header{
 }
 .header__category-link
 {
-    text-decoration: none;
+    text-decoration: black;
     color:var(--text-color--);
     font-weight: 450;
     font-size: 1.7rem;
@@ -484,7 +483,7 @@ header{
     content: "";
     position: absolute;
     border-left:  1px solid rgba(12, 8, 8, 0.2);
-    height: 60%;
+    height: 30%;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -1056,15 +1055,15 @@ header{
     /* display:none; */
     line-height: 2rem;
     background-color: white;
-    color:black; 
+    color:rgb(119 27 27); 
     text-align:center;
     border-radius: 12px;
     position: absolute;
     right: -15;
     top: -5px;
-    border-width: 3px;
+    border-width: 1.5px;
     border-style: solid;
-    border-color:black;
+    border-color:rgba(0,0,0,0.5);
     cursor: pointer;
    
     
@@ -1374,6 +1373,7 @@ header{
     display: block;
 }
 .catalogy__items-link{
+    font-weight: 600;
     position: relative;
     text-decoration: none;
     color: var(--text-color--);
