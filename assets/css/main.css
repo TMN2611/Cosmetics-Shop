@@ -2,6 +2,7 @@
     overflow: hidden;
     /* overflow: hidden; */
     /* box-sizing:inherit; */
+    background-color: yellow;
 }
 .app-content {
     /* background-color: rgb(230, 226, 221); */
@@ -205,6 +206,7 @@ header{
     animation: fadeIN ease-in-out 1s;
     display:none;
     z-index:1000000000;
+    
     
 }
 
