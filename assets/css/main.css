@@ -9,7 +9,7 @@
 /*------------------------------------ ----------------heder------------------------------------------------- */
 header{
     height:var( --header-height--);
-    background-color: tomato;
+    background-color:black;
     font-size: 1.6rem;
     width: 100%;
     
@@ -446,7 +446,7 @@ header{
     background-color: rgb(255, 255, 255);
     height: var( --header__catelogy-height);
     display: none;
-    border-bottom : 1px solid rgba(51, 51, 51, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.116);
 }
 .header__catelogy-list
 {
@@ -481,7 +481,7 @@ header{
 {
     content: "";
     position: absolute;
-    border-left:  1px solid rgba(12, 8, 8, 0.2);
+    border-left:  1px solid rgba(12, 8, 8, 0.1);
     height: 30%;
     top: 50%;
     left: 0;
@@ -540,7 +540,6 @@ header{
     -webkit-line-clamp: 2;
     user-select: none;
     -webkit-user-select: none;
-    
     /* padding: 5px 4px; */
 
 }
@@ -825,7 +824,7 @@ header{
 }
 .header__With-Search__logolazada
 {
-    height: 62px;
+    height: 100px;
 
 }
 .header__With-Search__logolazada-link {
@@ -1734,12 +1733,12 @@ i.product__items__favorate-icon
     margin-top: 20px;
     padding: 15px;
     text-align: center;
-    background-color:rgba(0, 0, 0,0.05);
+    background-color:rgb(0, 0, 0);
     align-items: center;
 }
 .footer__text
 {
-   color:#555555 ;
+   color:white ;
    font-size: 1.4rem;
 
 }
