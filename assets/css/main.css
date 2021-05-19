@@ -68,6 +68,7 @@ header{
  {
      border-radius: 50%;
      height: 30px;;
+     width: 30px;
      margin-top: -6px;
      border: 1px solid rgba(255, 255, 255, 0.562);
      
@@ -501,6 +502,8 @@ header{
 .mobile-category__list {
     display: flex;
     overflow-x: auto;
+    overflow-y:hidden;
+
     list-style: none;
     max-width: 100%;
     margin-top: 10px;
@@ -1487,6 +1490,7 @@ header{
 
 .product__items
 {
+    overflow: hidden;
     display: block;
     position: relative;
     min-width: 10px;
@@ -1506,6 +1510,7 @@ header{
     bottom: -2;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .product__items__image{
     padding-top: 100%;
