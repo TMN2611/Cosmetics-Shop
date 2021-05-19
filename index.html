@@ -14,7 +14,7 @@
         <div class="wrap">
 
             
-                <header class="header">
+                <header id="top" class="header">
                     <div class="grid wide">
     
                         <div class="header__nav hidden-on-Mobile_Tablet">
@@ -1476,13 +1476,93 @@
 
             <!-- /* ----------------------modal---------------------------- */ -->
             <!-- Register -->
-             <!-- <div class="modal">
+                        <!-- Login -->
+                        <div class="modal modal_login">
+                    
+                            <div class="modal__overlay">
+            
+                            </div>
+            
+                            <div class="modal__content modal__content_Login">
+                                <div class="form-login">
+                                    <div class="form-login-top">
+                                        <div class="form-login__header">
+                                            <h3 class="form-login__heading">Đăng Nhập</h3>
+                                            <button  class="form-login__Switch-btn">Đăng ký</button>
+                                        </div>
+            
+                                        <div class="form-login__group">
+                                            <div class="form-login__group__input">
+                                                <input type="text" class="form-login__input " placeholder="Số điện thoại">
+                                            </div>
+            
+                                            <div class="form-login__group__input">
+                                                <input type="password" class="form-login__input " placeholder="Mật khẩu">
+                                            </div>
+                                            
+                                                
+                                        </div>
+            
+                                        <div class="form-login__policy">
+                                            <div class="form-login__policy-help">
+                                                <a href="#" class="form-login__policy-help-link form-login__policy-help-forgot">Quên mật khẩu</a>
+                                                <span class="form-login__policy-line"></span>
+                                                <a href="#" class="form-login__policy-help-link form-login__policy-help-help">Trợ giúp ?</a>
+                                            </div>
+                                        </div>
+            
+                                        <div class="form-login__btn__bottom">
+                                            <div class="form-login__btn">
+                                                <button class="form-login__btn btn__secondary">TRỞ LẠI</button>
+                                            </div>
+                                            
+                                            <div class="form-login__btn">
+                                                <button class="form-login__btn btn__primary">ĐĂNG NHẬP</button>
+                                            </div>  
+                                        
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-login-bottom">
+                                        <div class="form-login-bottom__content">
+            
+                                            <div class="form-login-bottom__social">
+                                                <div class="form-login-bottom__social__FB">
+                                                    <a href="#" class="form-login__social__facebook">
+                                                        <i class="fab fa-facebook-square"></i>
+                                                        <span class="form-login__social__facebook-text">Đăng nhập vơi Faceook</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                           <div class="form-login-bottom__social">
+                                            <div class="form-login-bottom__social__GG">
+                                                <a href="#" class="form-login__social__Google">
+                                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="20px " class="form-login__social__Google-link" />
+                                                    <span class="form-login__social__Google-text">Đăng nhập vơi Google</span>
+                                                </a>
+                                            </div>
+                                           </div>
+                                            
+                                        </div>
+                                           
+                                    </div>
+                                
+            
+            
+            
+                                </div>
+                            </div>
+                                
+                        </div>
+            
+             <div class="modal modal__Register">
                 <div class="modal__overlay">
 
                 </div>
 
-                <div class="modal__content">
-                    <div class="form-login">
+                <div class="modal__content  modal__content_Register">
+                    <div class="modal__content">
                         <div class="form-login-top">
                             <div class="form-login__header">
                                 <h3 class="form-login__heading">Đăng Ký</h3>
@@ -1512,13 +1592,19 @@
                             </div>
 
                             <div class="form-login__btn__bottom">
-                                <div class="form-login__btn">
-                                    <button class="form-login__btn btn__secondary">TRỞ LẠI</button>
-                                </div>
+                                <a href="#top" class="">
+                                    <div class="form-login__btn">
+                                        <button class="form-login__btn btn__secondary btn__secondary_Register">TRỞ LẠI</button>
+                                    </div>
+                                </a>
+                               
                                 
-                                <div class="form-login__btn">
-                                    <button class="form-login__btn btn__primary">ĐĂNG KÝ</button>
-                                </div>  
+                                
+                                    <div class="form-login__btn">
+                                        <button class="form-login__btn btn__primary">ĐĂNG KÝ</button>
+                                    </div> 
+                                
+                                
                             
                             </div>
                         </div>
@@ -1550,89 +1636,10 @@
                     </div>
                 </div>
                     
-            </div> -->
+            </div>
              
             
              
-            <!-- Login -->
-            <!-- <div class="modal">
-                    
-                <div class="modal__overlay">
-
-                </div>
-
-                <div class="modal__content">
-                    <div class="form-login">
-                        <div class="form-login-top">
-                            <div class="form-login__header">
-                                <h3 class="form-login__heading">Đăng Nhập</h3>
-                                <button  class="form-login__Switch-btn">Đăng ký</button>
-                            </div>
-
-                            <div class="form-login__group">
-                                <div class="form-login__group__input">
-                                    <input type="text" class="form-login__input " placeholder="Số điện thoại">
-                                </div>
-
-                                <div class="form-login__group__input">
-                                    <input type="password" class="form-login__input " placeholder="Mật khẩu">
-                                </div>
-                                
-                                    
-                            </div>
-
-                            <div class="form-login__policy">
-                                <div class="form-login__policy-help">
-                                    <a href="#" class="form-login__policy-help-link form-login__policy-help-forgot">Quên mật khẩu</a>
-                                    <span class="form-login__policy-line"></span>
-                                    <a href="#" class="form-login__policy-help-link form-login__policy-help-help">Trợ giúp ?</a>
-                                </div>
-                            </div>
-
-                            <div class="form-login__btn__bottom">
-                                <div class="form-login__btn">
-                                    <button class="form-login__btn btn__secondary">TRỞ LẠI</button>
-                                </div>
-                                
-                                <div class="form-login__btn">
-                                    <button class="form-login__btn btn__primary">ĐĂNG NHẬP</button>
-                                </div>  
-                            
-                            </div>
-                        </div>
-
-                        <div class="form-login-bottom">
-                            <div class="form-login-bottom__content">
-
-                                <div class="form-login-bottom__social">
-                                    <div class="form-login-bottom__social__FB">
-                                        <a href="#" class="form-login__social__facebook">
-                                            <i class="fab fa-facebook-square"></i>
-                                            <span class="form-login__social__facebook-text">Đăng nhập vơi Faceook</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                               <div class="form-login-bottom__social">
-                                <div class="form-login-bottom__social__GG">
-                                    <a href="#" class="form-login__social__Google">
-                                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="20px " class="form-login__social__Google-link" />
-                                        <span class="form-login__social__Google-text">Đăng nhập vơi Google</span>
-                                    </a>
-                                </div>
-                               </div>
-                                
-                            </div>
-                               
-                        </div>
-                    
-
-
-
-                    </div>
-                </div>
-                    
-            </div> -->
 
             
             
@@ -1640,5 +1647,6 @@
         <script src="index.js">
             
         </script>
+        
 </body>
 </html>

@@ -572,6 +572,10 @@ header{
 
 /*------------------------------------------------------ --Form--Modal-- ------------------------------------------------------*/
 /* Register */
+
+.modal__content_Login {
+    display:none;
+}
 .form-login-top
 {
     margin: 30px 46px;
